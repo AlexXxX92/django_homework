@@ -17,9 +17,7 @@ def bus_stations(request):
             content.append({'Name': row['Name'], 'Street': row['Street'], 'District': row['District']})
     page_number = int(request.GET.get("page", 1))
     paginator = Paginator(content, 10)
-    # print(content)
     page = paginator.get_page(page_number)
-    # print(page.object_list[0])
 
 
     # получите текущую страницу и передайте ее в контекст
