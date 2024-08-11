@@ -8,9 +8,45 @@
       "pub_date": "2018-02-27"
     }
   },
-  {
+    {
     "model": "books.book",
     "pk": 2,
+    "fields": {
+      "name": "Скотный двор",
+      "author": "Джорж Оруэл",
+      "pub_date": "2018-09-21"
+    }
+  },
+      {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "В память о прошлом земли",
+      "author": "Лю цысинь",
+      "pub_date": "2018-09-21"
+    }
+  },
+        {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Сияние",
+      "author": "Стивен Кинг",
+      "pub_date": "2018-09-10"
+    }
+  },
+        {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Книга",
+      "author": "Знаменитый",
+      "pub_date": "2015-03-11"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
     "fields": {
       "name": "1984",
       "author": "Джордж Оруэл",
