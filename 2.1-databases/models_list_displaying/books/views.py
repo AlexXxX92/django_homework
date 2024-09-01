@@ -20,3 +20,4 @@ def book_view(request, date_pub):
 
               }
     return render(request, template, context)
+

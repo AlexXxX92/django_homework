@@ -63,8 +63,13 @@ Content-Type: application/json
 
 ###
 
+DELETE  {{baseUrl}}/stocks/3/
+Content-Type: application/json
+
+###
+
 # обновляем записи на складе
-PATCH {{baseUrl}}/stocks/4/
+PATCH {{baseUrl}}/stocks/5/
 Content-Type: application/json
 
 {
@@ -86,4 +91,9 @@ Content-Type: application/json
 
 # поиск складов, где есть определенный продукт
 GET {{baseUrl}}/stocks/?products=2
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/stocks/?search=Помидор
 Content-Type: application/json
