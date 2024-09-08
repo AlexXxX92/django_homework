@@ -39,7 +39,14 @@ class AdvertisementSerializer(serializers.ModelSerializer):
 
     def validate(self, data):
         """Метод для валидации. Вызывается при создании и обновлении."""
-
         # TODO: добавьте требуемую валидацию
+
+        if self.context["request"].method == "POST":
+            if Advertisement.objects.filter(creator=self.context["request"].user).count() > 10:
+                raise serializers.ValidationError("You can only create 10 advertisements")
+        elif self.context["request"].method in ["DELETE", "PATCH"]:
+            if self.instance.creator != self.context["request"].user:
+                print(self.instance.all(), self.context["request"].user)
+                raise serializers.ValidationError("You can only update your own advertisements")
 
         return data
