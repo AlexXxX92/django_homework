@@ -21,7 +21,7 @@ Authorization: Token 18a9c4b0b8fd073c293de0d9d63bee2894b8ae4a
 ###
 
 # попытка поменять объявление
-PATCH {{baseUrl}}/advertisements/6/
+PATCH {{baseUrl}}/advertisements/11/
 Content-Type: application/json
 Authorization: Token 18a9c4b0b8fd073c293de0d9d63bee2894b8ae4a
 
